@@ -10,14 +10,14 @@ function changeImage(number) {
     if (number == 1) {
         document.getElementById("image").src = "images/bg1.jpg";
         document.getElementById("small-image").src = "images/1.jpg";
-        document.getElementById("num1").innerHTML = 0 + 1;
+        document.getElementById("num1").innerHTML =+ 1;
     } else if (number == 2) {
         document.getElementById("image").src = "images/bg2.jpg";
         document.getElementById("small-image").src = "images/2.jpg";
-        document.getElementById("num2").innerHTML = 0 + 1;
+        document.getElementById("num2").innerHTML =+ 1;
     } else if (number == 3) {
         document.getElementById("image").src = "images/bg3.jpg";
         document.getElementById("small-image").src = "images/3.jpg";
-        document.getElementById("num3").innerHTML = 0 + 1;
+        document.getElementById("num3").innerHTML =+ 1;
     }
 }

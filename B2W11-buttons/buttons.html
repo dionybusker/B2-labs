@@ -7,11 +7,18 @@
 </head>
 <body>
    <div id="container">
-      <button id="button1" onclick="changeImage()">1</button>
-      <button id="button2"></button>
-      <button id="button3"></button>
+      <button id="button1" onclick="changeImage(1)">
+         <p id="num1">0</p>
+      </button>
+      <button id="button2" onclick="changeImage(2)">
+         <p id="num2">0</p>
+      </button>
+      <button id="button3" onclick="changeImage(3)">
+         <p id="num3">0</p>
+      </button>
 
-      <img id="image" src="images/0.jpg" alt="image 0.jpg">
+      <img id="image" src="images/bg0.jpg" alt="image bg0.jpg">
+      <img id="small-image" src="images/0.jpg" alt="image .jpg">
    </div>
   	<script src="buttons.js"></script>
  </body>

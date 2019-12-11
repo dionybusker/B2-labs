@@ -16,11 +16,19 @@ for (i = 1; i <= 30; i++) {
     button.style.fontSize = "75px";
     button.style.backgroundColor = "green";
 
+    button.setAttribute("id", `${i}`)
+
     button.setAttribute("onclick", "changeColor(true)");
+
+    (function changeColor(clicked) {
+        if (clicked == true) {
+            button.style.backgroundColor = "red";
+        }
+    }).call(this, i)
 }
 
-function changeColor(clicked) {
-    if (clicked == true) {
-        button.style.backgroundColor = "red";
-    }
-}
+// function changeColor(clicked) {
+//     if (clicked == true) {
+//         button.style.backgroundColor = "red";
+//     }
+// }

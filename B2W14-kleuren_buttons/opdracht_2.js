@@ -3,6 +3,8 @@ container.style.backgroundColor = "grey";
 container.style.width = "1150px";
 container.style.margin = "0 auto";
 
+var colors = ["red", "purple", "blue", "black"];
+var index = 0;
 
 for (i = 1; i <= 30; i++) {
     var button = document.createElement("button");
@@ -18,8 +20,11 @@ for (i = 1; i <= 30; i++) {
     button.id = `${i}`;
     button.onclick = function() {
         this.style.backgroundColor = "red";
-        button.onclick = function() {
-            this.style.backgroundColor = "purple";
-        }
+        // button.onclick = function() {
+        //     this.style.backgroundColor = "purple";
+        // }
+
+        this.style.backgroundColor = colors[index];
+        index = (index + 1) % colors.length;
     }
 }

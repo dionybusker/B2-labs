@@ -4,7 +4,6 @@ container.style.width = "1150px";
 container.style.margin = "0 auto";
 
 
-
 for (i = 1; i <= 30; i++) {
     var button = document.createElement("button");
     container.appendChild(button);
@@ -16,15 +15,21 @@ for (i = 1; i <= 30; i++) {
     button.style.fontSize = "75px";
     button.style.backgroundColor = "green";
 
-    button.setAttribute("id", `${i}`)
+    button.id = "changeColor";
 
-    button.setAttribute("onclick", "changeColor(true)");
+    button.onclick = function() {
+        this.style.backgroundColor = "red";
+    }
 
-    (function changeColor(clicked) {
-        if (clicked == true) {
-            button.style.backgroundColor = "red";
-        }
-    }).call(this, i)
+    // button.setAttribute("id", `${i}`);
+
+    // button.setAttribute("onclick", "changeColor(false)");
+
+    // (function changeColor(clicked) {
+    //     if (clicked == true) {
+    //         button.style.backgroundColor = "red";
+    //     }
+    // }).call(this, i)
 }
 
 // function changeColor(clicked) {

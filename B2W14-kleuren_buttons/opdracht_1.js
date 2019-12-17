@@ -15,25 +15,8 @@ for (i = 1; i <= 30; i++) {
     button.style.fontSize = "75px";
     button.style.backgroundColor = "green";
 
-    button.id = "changeColor";
-
+    button.id = `${i}`;
     button.onclick = function() {
         this.style.backgroundColor = "red";
     }
-
-    // button.setAttribute("id", `${i}`);
-
-    // button.setAttribute("onclick", "changeColor(false)");
-
-    // (function changeColor(clicked) {
-    //     if (clicked == true) {
-    //         button.style.backgroundColor = "red";
-    //     }
-    // }).call(this, i)
 }
-
-// function changeColor(clicked) {
-//     if (clicked == true) {
-//         button.style.backgroundColor = "red";
-//     }
-// }

@@ -18,5 +18,8 @@ for (i = 1; i <= 30; i++) {
     button.id = `${i}`;
     button.onclick = function() {
         this.style.backgroundColor = "red";
+        button.onclick = function() {
+            this.style.backgroundColor = "purple";
+        }
     }
 }

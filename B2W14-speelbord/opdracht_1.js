@@ -63,4 +63,5 @@ var buttonCheck = document.createElement("button");
 var empty = document.createElement("aside");
     empty.setAttribute("class", "empty");
     empty.style.gridArea = "empty";
+    
     gridContainer.appendChild(empty);

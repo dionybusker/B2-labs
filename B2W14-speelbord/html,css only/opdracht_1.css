@@ -1,23 +1,32 @@
-body {
+/* body {
     background-color: grey;
+    font-family: Calibri;
 }
 
 #grid-container {
+    background-color: #f7d258;
     display: grid;
     grid-template-areas: 'word inputWord empty'
                          'letter inputLetter empty'
                          'check check empty';
     grid-template-rows: minmax(50px, auto);
     grid-template-columns: repeat(3, 1fr);
-    width: 1000px;
+    width: 500px;
     height: auto;
     margin: 0 auto;
-    background-color: yellow;
+    padding: 20px;
 }
 
 #grid-container > p > .word { grid-area: word; }
 #grid-container > p > .letter { grid-area: letter; }
-#grid-container > .input-word { grid-area: inputWord; }
-#grid-container > .input-letter { grid-area: inputLetter; }
+#grid-container > .input-word { grid-area: inputWord; height: 25px; margin: 10px 0;}
+#grid-container > .input-letter { grid-area: inputLetter; height: 25px; margin: 10px 0;}
 #grid-container > .empty { grid-area: empty; }
-#grid-container > .check { grid-area: check; width: 100px; position: relative; left: 50px; }
+#grid-container > .check {
+    grid-area: check;
+    width: 100px;
+    height: 30px;
+    position: relative;
+    left: 200px;
+    margin: 10px 0;
+} */

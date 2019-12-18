@@ -1,0 +1,23 @@
+body {
+    background-color: grey;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-areas: 'word inputWord empty'
+                         'letter inputLetter empty'
+                         'check check empty';
+    grid-template-rows: minmax(50px, auto);
+    grid-template-columns: repeat(3, 1fr);
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    background-color: yellow;
+}
+
+#grid-container > p > .word { grid-area: word; }
+#grid-container > p > .letter { grid-area: letter; }
+#grid-container > .input-word { grid-area: inputWord; }
+#grid-container > .input-letter { grid-area: inputLetter; }
+#grid-container > .empty { grid-area: empty; }
+#grid-container > .check { grid-area: check; width: 100px; position: relative; left: 50px; }

@@ -6,7 +6,7 @@ var gridContainer = document.createElement("div");
     gridContainer.setAttribute("id", "grid-container");
     gridContainer.style.backgroundColor = "#F7D258";
     gridContainer.style.display = "grid";
-    gridContainer.style.gridTemplateAreas = " 'word inputWord empty' 'letter inputLetter empty' 'check check empty' ";
+    gridContainer.style.gridTemplateAreas = " 'word inputWord .' 'letter inputLetter .' 'check check .' ";
     gridContainer.style.gridTemplateRows = "minmax(50px, auto)";
     gridContainer.style.gridTemplateColumns = "repeat(3, 1fr)";
     gridContainer.style.width = "500px";
@@ -50,7 +50,7 @@ var inputLetter = document.createElement("input");
 
 var buttonCheck = document.createElement("button");
     buttonCheck.setAttribute("class", "check");
-    buttonCheck.textContent += "CHECK";
+    buttonCheck.textContent = "CHECK";
     buttonCheck.style.gridArea = "check";
     buttonCheck.style.width = "100px";
     buttonCheck.style.height = "30px";
@@ -60,8 +60,8 @@ var buttonCheck = document.createElement("button");
 
     gridContainer.appendChild(buttonCheck);
 
-var empty = document.createElement("aside");
-    empty.setAttribute("class", "empty");
-    empty.style.gridArea = "empty";
-    
-    gridContainer.appendChild(empty);
+// var empty = document.createElement("aside");
+//     empty.setAttribute("class", "empty");
+//     empty.style.gridArea = "empty";
+
+//     gridContainer.appendChild(empty);

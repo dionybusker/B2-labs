@@ -65,3 +65,29 @@ var buttonCheck = document.createElement("button");
 //     empty.style.gridArea = "empty";
 
 //     gridContainer.appendChild(empty);
+
+var gridLetters = document.createElement("div");
+    gridLetters.setAttribute("id", "grid-letters");
+    gridLetters.style.backgroundColor = "#FFFFFF";
+    gridLetters.style.display = "grid";
+    gridLetters.style.gridTemplateAreas = " 'letter letter letter letter letter' ";
+    gridLetters.style.gridTemplateAreas.gridTemplateRows = "minmax(50px, auto)";
+    gridLetters.style.gridTemplateColumns = "repeat(5, 1fr)";
+    gridLetters.style.width = "500px";
+    gridLetters.style.height = "auto";
+    gridLetters.style.margin = "0 auto";
+    gridLetters.style.padding = "0 20px";
+
+    body.appendChild(gridLetters);
+
+for (var i = 1; i <= 5; i++) {
+    var letterBox = document.createElement("p");
+        letterBox.innerText = i;
+        letterBox.style.width = "50px";
+        letterBox.style.textAlign = "center";
+        letterBox.style.border = "1px solid black";
+        letterBox.style.fontSize = "45px";
+        letterBox.style.margin = "20px auto";
+
+        gridLetters.appendChild(letterBox);
+}
